@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "^2.16.5",
+    "gatsby-theme-appsfortracking": "*",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}

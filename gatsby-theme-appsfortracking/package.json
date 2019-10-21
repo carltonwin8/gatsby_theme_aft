@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-theme-appsfortracking",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme"
+  ],
+  "author": {
+    "name": "Carlton Joseph",
+    "email": "carlton.joseph@gmail.com",
+    "url": "http://carltonjoseph.com"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.16.5",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}
