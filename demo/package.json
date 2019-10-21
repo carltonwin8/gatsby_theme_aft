@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop"
+    "develop": "gatsby develop",
+    "developc": "gatsby clean && gatsby develop",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "gatsby": "^2.16.5",
