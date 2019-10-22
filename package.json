@@ -2,6 +2,7 @@
   "private": true,
   "workspaces": [
     "gatsby-theme-appsfortracking",
-    "demo"
+    "demo",
+    "demo2"
   ]
 }

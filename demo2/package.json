@@ -1,0 +1,18 @@
+{
+  "name": "demo2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Carlton Joseph <carlton.joseph@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "developc": "gatsby clean && gatsby develop",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.17.0",
+    "gatsby-theme-appsfortracking": "*",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}

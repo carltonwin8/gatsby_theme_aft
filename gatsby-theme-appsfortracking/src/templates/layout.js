@@ -13,10 +13,14 @@ export const query = graphql`
 `;
 
 const Layout = props => {
-  return (
-    <>
-      <MdxContent {...props.data.file.childMdx} />
-    </>
+  console.log(props);
+
+  return props.data && props.data.file && props.data.file.childMdx ? (
+    <MdxContent {...props.data.file.childMdx} />
+  ) : (
+    <div>
+      <h1>Error</h1>
+    </div>
   );
 };
 
