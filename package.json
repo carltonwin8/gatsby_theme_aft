@@ -4,5 +4,14 @@
     "gatsby-theme-appsfortracking",
     "demo",
     "demo2"
-  ]
+  ],
+  "scripts": {
+    "rimraf:inst": "npm install -g rimraf",
+    "rimraf:comment": "global install to operate once node_modules is rm'ed",
+    "clean": "rimraf node_modules && rimraf demo/node_modules && rimraf gatsby-theme-appsfortracking/node_modules",
+    "them:pub": "cd gatsby-theme-appsfortracking && npm publish --access public",
+    "site:build": "yarn workspace demo build",
+    "site:ghpages": "yarn workspace demo ghpages",
+    "develop": "yarn workspace demo develop"
+  }
 }

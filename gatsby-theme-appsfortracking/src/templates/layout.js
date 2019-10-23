@@ -13,8 +13,6 @@ export const query = graphql`
 `;
 
 const Layout = props => {
-  console.log(props);
-
   return props.data && props.data.file && props.data.file.childMdx ? (
     <MdxContent {...props.data.file.childMdx} />
   ) : (

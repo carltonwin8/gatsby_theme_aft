@@ -1,3 +1,4 @@
 module.exports = {
-  plugins: [{ resolve: "gatsby-theme-appsfortracking", options: {} }]
+  plugins: [{ resolve: "gatsby-theme-appsfortracking", options: {} }],
+  pathPrefix: "gatsby_theme_aft"
 };

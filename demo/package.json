@@ -5,13 +5,18 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
+    "build": "gatsby build",
     "developc": "gatsby clean && gatsby develop",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "ghpages": "gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^2.16.5",
     "gatsby-theme-appsfortracking": "*",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
