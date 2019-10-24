@@ -1,25 +1,20 @@
 Arguments: 
-  /Users/carltonjoseph/.nvm/versions/node/v12.11.1/bin/node /Users/carltonjoseph/.yarn/bin/yarn.js clean
+  /Users/appsfortracking/.nvm/versions/node/v12.13.0/bin/node /Users/appsfortracking/.nvm/versions/node/v12.13.0/bin/yarn clean:rm
 
 PATH: 
-  /Users/carltonjoseph/.nvm/versions/node/v12.11.1/bin:/Users/carltonjoseph/.deno/bin:/Users/carltonjoseph/.cargo/bin:/Users/carltonjoseph/.yarn/bin:/Users/carltonjoseph/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/carltonjoseph/Library/Android/sdk/platform-tools:/Users/carltonjoseph/cj/configsNscripts/javascript/scripts:/Users/carltonjoseph/Developer/flutter/bin
+  /Users/appsfortracking/.nvm/versions/node/v12.13.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin:/Applications/Wireshark.app/Contents/MacOS
 
 Yarn version: 
-  1.13.0
+  1.19.1
 
 Node version: 
-  12.11.1
+  12.13.0
 
 Platform: 
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/carltonjoseph/cj/cj2019/docs/gatsby/appsfortracking/gatsby_theme_aft/package.json: Unexpected string in JSON at position 244
-      at JSON.parse (<anonymous>)
-      at /Users/carltonjoseph/.yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/Users/carltonjoseph/.yarn/lib/cli.js:304:30)
-      at /Users/carltonjoseph/.yarn/lib/cli.js:315:13
+  Error: EACCES: permission denied, open '/Users/carltonjoseph/.npmrc'
 
 npm manifest: 
   {
@@ -31,11 +26,13 @@ npm manifest:
     ],
     "scripts": {
       "rimraf:inst": "npm install -g rimraf",
-      "rimraf:comment": "global install to operate once node_modules is rm'ed"
+      "rimraf:comment": "global install to operate once node_modules is rm'ed",
       "clean": "rimraf node_modules && rimraf demo/node_modules && rimraf gatsby-theme-appsfortracking/node_modules",
+      "clean:rm": "rm node_modules && rm demo/node_modules && rm gatsby-theme-appsfortracking/node_modules",
       "them:pub": "cd gatsby-theme-appsfortracking && npm publish --access public",
       "site:build": "yarn workspace demo build",
-      "site:ghpages": "yarn workspace demo ghpages"
+      "site:ghpages": "yarn workspace demo ghpages",
+      "develop": "yarn workspace demo develop"
     }
   }
 

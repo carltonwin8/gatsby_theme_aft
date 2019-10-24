@@ -4,7 +4,16 @@ The code in this repository is based on the
 [Building your first Gatsby theme](https://www.youtube.com/watch?v=W2uTfay3doo)
 video.
 
-## Notes
+A test documentation site is released
+[here](https://appsfortracking.github.io/gatsby_theme_aft/).
 
-- `npm adduser` as appsfortracking
-- `npm run publish` as appsfortracking
+## To Release
+
+- update development repo with `git status/add/commit/"push cj master"`
+- switch to the release account of appsfortracking on the mac
+- update release repo with `git status/add/commit/push`
+- if not previously done setup the npm user via `npm adduser`
+- release the test site via `yarn/yarn site:build/yarn site:ghpages`
+- verify the test site release at link noted above
+
+## Notes
