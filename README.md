@@ -11,7 +11,7 @@ A test documentation site is released
 
 - update development repo with `git status/add/commit/"push cj master"`
 - switch to the release account of appsfortracking on the mac
-- update release repo with `git status/add/commit/push`
+- update release repo with `git push`
 - if not previously done setup the npm user via `npm adduser`
 - release the test site via `yarn/yarn site:build/yarn site:ghpages`
 - verify the test site release at link noted above
