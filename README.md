@@ -9,6 +9,7 @@ A test documentation site is released
 
 ## To Release
 
+- `rimraf` need to be installed globally for the `clean` script
 - update development repo with `git status/add/commit/"push cj master"`
 - switch to the release account of appsfortracking on the mac
 - update release repo with `git push`

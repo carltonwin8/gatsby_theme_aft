@@ -6,4 +6,3 @@
 - This theme is developed in the
   [gatsby_theme_aft](https://github.com/appsfortracking/gatsby_theme_aft)
   repository and any change requests should be filed in that repository.
-- `rimraf` need to be installed globally for the `clean` script
