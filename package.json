@@ -8,13 +8,15 @@
   "scripts": {
     "rimraf:inst": "npm install -g rimraf",
     "rimraf:comment": "global install to operate once node_modules is rm'ed",
-    "clean": "yarn clean:demo && rimraf node_modules && rimraf demo/node_modules && rimraf gatsby-theme-appsfortracking/node_modules",
+    "clean:all": "yarn clean:demos && rimraf node_modules && rimraf demo/node_modules && rimraf gatsby-theme-appsfortracking/node_modules",
     "clean:rm": "rm node_modules && rm demo/node_modules && rm gatsby-theme-appsfortracking/node_modules",
     "them:pub": "cd gatsby-theme-appsfortracking && npm publish --access public",
     "site:build": "yarn workspace demo build",
     "site:ghpages": "yarn workspace demo ghpages",
     "develop": "yarn workspace demo develop",
     "clean:demo": "yarn workspace demo clean",
-    "deploy": "yarn clean && yarn && yarn site:build && yarn site:ghpages"
+    "clean:demo2": "yarn workspace demo2 clean",
+    "clean:demos": "yarn clean:demo && yarn clean:demo2",
+    "deploy": "yarn clean:all && yarn && yarn site:build && yarn site:ghpages"
   }
 }
